@@ -2,6 +2,8 @@
 
 UrbanEV is an open dataset of EV charging space availability and electricity use in Shenzhen, China. This project is dedicated to the public domain using the [CC0 1.0 Universal License](LICENSE). For more information, see [Creative Commons - CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
+**Languages:** English | [简体中文](README.zh-CN.md)
+
 ## Latest Dryad dataset version
 
 The [2026-02-04 Dryad version](data/DRYAD_2026-02-04.md) is the current dataset release, including official download links and SHA-256 checksums. The 320.23 MB archive is linked from Dryad rather than duplicated in GitHub because it exceeds GitHub's 100 MB per-file limit.
