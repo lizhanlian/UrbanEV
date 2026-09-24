@@ -70,6 +70,19 @@ UrbanEV 相关数据已公开发布于 [Dryad](https://doi.org/10.5061/dryad.np5
 
 充电站级数据的经纬度采用 **GCJ-02** 坐标系。新上传的预处理充电站级数据目录中还包含对应的详细说明文件。
 
+### GitHub 分卷压缩包
+
+2026-02-04 版本的 `UrbanEVDataset.zip` 也已放在 [`dataset_parts`](dataset_parts/) 目录中，拆分为 7 个分卷（`.z01`–`.z06` 和最后的 `.zip`），每个文件均小于 50 MB。请将全部 7 个文件下载到同一目录后合并并解压：
+
+```bash
+cd dataset_parts
+zip -s 0 UrbanEVDataset.zip --out UrbanEVDataset-merged.zip
+unzip -t UrbanEVDataset-merged.zip
+unzip UrbanEVDataset-merged.zip
+```
+
+详细说明请参阅 [`dataset_parts/README.md`](dataset_parts/README.md)。请勿重命名、遗漏或单独解压任何分卷。
+
 ## 文件说明
 
 ### `code`

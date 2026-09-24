@@ -92,6 +92,19 @@ All datasets related to UrbanEV have been made publicly available on  **[Dryad](
 
 The longitude and latitude coordinates of the station-level data are provided in the **GCJ-02** coordinate system. The folder for the newly uploaded preprocessed station-level data includes a separate README file with detailed descriptions of this data.
 
+### GitHub split archive
+
+The 2026-02-04 `UrbanEVDataset.zip` is also available in the [`dataset_parts`](dataset_parts/) directory as seven split-archive volumes (`.z01`–`.z06` and the final `.zip`), each smaller than 50 MB. Download all seven files into the same directory, then merge and extract them:
+
+```bash
+cd dataset_parts
+zip -s 0 UrbanEVDataset.zip --out UrbanEVDataset-merged.zip
+unzip -t UrbanEVDataset-merged.zip
+unzip UrbanEVDataset-merged.zip
+```
+
+See [`dataset_parts/README.md`](dataset_parts/README.md) for details. Do not rename or omit any volume.
+
 The data directory of this GitHub repository contains the preprocessed zone-level dataset used in [Paper in Spring Nature](https://doi.org/10.1038/s41597-025-04874-4)
 
 ![avatar](figs/map.png) Figure 1. Spatial distribution of **1,682** public charging stations and **24,798** charging piles in the UrbanEV dataset.
